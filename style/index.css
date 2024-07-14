@@ -71,8 +71,8 @@ body{
     background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd28xMW5za2pwcGFpbGdzMWIwa3Zrb3NvOHJuN3A4MXlveXVtaGI3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ftfVpeWsm95QgGfOZ8/giphy.gif') no-repeat center center; 
     background-size: cover;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 200px auto 200px;
+    grid-template-columns: 25% 3fr;
+    grid-template-rows: auto auto 200px;
     grid-template-areas: 
     "aside article" 
     "aside article"
