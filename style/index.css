@@ -64,8 +64,11 @@ body{
 
 /* main */
 .main{
-    background-color: var(--main-bg-color);
+    width: 100%;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    position: relative;
+    background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd28xMW5za2pwcGFpbGdzMWIwa3Zrb3NvOHJuN3A4MXlveXVtaGI3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ftfVpeWsm95QgGfOZ8/giphy.gif') no-repeat center center; 
+    background-size: cover;
 }
 
 /* footer */
