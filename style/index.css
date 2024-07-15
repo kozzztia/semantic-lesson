@@ -22,7 +22,6 @@
     --transition : 0.3s;
 
 }
-
 /* reset */
 *{
     padding: 0;
@@ -32,6 +31,7 @@
 }
 a{
     text-decoration: none;
+    user-select: none;
 }
 li{
     list-style: none;
@@ -46,7 +46,6 @@ body{
     color: var(--text-color);
     font-size: var(--font-size);
 }
-
 .header, .main, .footer{
     max-width: calc(var(--max-width));
     margin: var(--margin-centred);
@@ -86,7 +85,6 @@ body{
     height: 100%;
     cursor: pointer;
 }
-
 .header>nav>ul>li>a{
     padding: var(--padding);
     color: var(--decore-text-color);
@@ -97,7 +95,6 @@ body{
     transition: var(--transition);
     border-radius: var(--radius);
 }
-
 .header>nav>ul>li>a:hover{
     color: var(--text-color);
     background: var(--bg-color);
@@ -130,7 +127,6 @@ body{
 .aside>ul>li{
     margin-bottom: var(--padding);
 }
-
 .aside>ul>li>a{
     color: var(--text-color);
     letter-spacing: 2px;
@@ -145,7 +141,6 @@ body{
     padding : var(--padding);
 }
 .aside>ul>li>a:hover{
-
     color: var(--decore-text-color);
     background: var(--bg-color);
 }
@@ -154,8 +149,6 @@ body{
     height: var(--icon-size);
     margin-left : var(--padding);
 }
-
-
 
 /* article */
 .article{
@@ -205,7 +198,6 @@ body{
     grid-area: p;
     text-align: center;
     padding: var(--padding);
-
 }
 .article>ul{
     grid-area: u;
@@ -219,24 +211,18 @@ body{
 .section{
     grid-area: section;
 }
-
 .section>p, .section>h3{
     padding: var(--padding);
     margin-bottom: var(--padding);
 }
 
-
-
 /* article, section, aside */
-
 .aside, .article, .section{
     background-color: var(--opacity-bg-color);
     color: var(--text-color);
     padding: var(--padding);
     border-radius: var(--radius);
 }
-
-
 
 /* footer */
 .footer{
