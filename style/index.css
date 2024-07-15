@@ -120,6 +120,9 @@ body{
 }
 .aside{
     grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
 .aside>ul{
     padding: var(--padding);
@@ -148,6 +151,11 @@ body{
     width : var(--icon-size);
     height: var(--icon-size);
     margin-left : var(--padding);
+}
+.aside>iframe{
+    margin-top: auto;
+    width : 100%;
+    max-height: 300px;
 }
 
 /* article */
