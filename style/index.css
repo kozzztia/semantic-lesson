@@ -14,6 +14,8 @@
     --padding : 15px;
     --margin-centred : 0 auto;
     --font-size : 20px;
+    --radius : 10px;
+    --picture-size : 200px;
 }
 
 /* reset */
@@ -21,6 +23,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 a{
     text-decoration: none;
@@ -109,15 +112,65 @@ body{
 .aside{
     grid-area: aside;
 }
+/* article */
 .article{
     grid-area: article;
+    display: grid;
+    grid-template-columns: var(--picture-size) auto;
+    grid-template-rows: 50px var(--picture-size) auto;
+    grid-template-areas: 
+    "h h"
+    "f u"
+    "p p"
+    ;
+    grid-gap: var(--padding);
 }
+.article>h2{
+    grid-area: h;
+    text-align: center;
+    width: 100%;
+}
+.article>figure{
+    grid-area: f;
+    position: relative;
+    display: block;
+    width : var(--picture-size);
+    height: var(--picture-size);
+}
+.article>figure>img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--radius);
+}
+.article>figure>figcaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+.article>p{
+    grid-area: p;
+    display: block;
+    width: 100%;
+}
+.article>ul{
+    grid-area: u;
+    align-content: center;
+}
+
+
 .section{
     grid-area: section;
 }
 .aside, .article, .section{
     background-color: var(--opacity-bg-color);
     color: var(--text-color);
+    padding: var(--padding);
+    border-radius: var(--radius);
 }
 
 
