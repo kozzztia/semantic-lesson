@@ -32,7 +32,7 @@ li{
     list-style: none;
 }
 
-/* styled */
+/* styled body*/
 body{
     width: 100vw;
     min-height: 100vh;
@@ -170,14 +170,20 @@ body{
     margin-bottom: var(--padding);
 }
 
-
+/* section */
 .section{
     grid-area: section;
 }
 
-.section>p{
+.section>p, .section>h3{
     padding: var(--padding);
+    margin-bottom: var(--padding);
 }
+
+
+
+/* article, section, aside */
+
 .aside, .article, .section{
     background-color: var(--opacity-bg-color);
     color: var(--text-color);
