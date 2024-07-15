@@ -16,6 +16,11 @@
     --font-size : 20px;
     --radius : 10px;
     --picture-size : 200px;
+    --icon-size : 25px;
+
+    /* transitions */
+    --transition : 0.3s;
+
 }
 
 /* reset */
@@ -83,12 +88,19 @@ body{
 }
 
 .header>nav>ul>li>a{
+    padding: var(--padding);
     color: var(--decore-text-color);
     letter-spacing: 2px;
     font-size: var(--font-size);
     font-weight: bold;
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: var(--transition);
+    border-radius: var(--radius);
+}
+
+.header>nav>ul>li>a:hover{
+    color: var(--text-color);
+    background: var(--bg-color);
 }
 
 /* main */
@@ -99,7 +111,7 @@ body{
     background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd28xMW5za2pwcGFpbGdzMWIwa3Zrb3NvOHJuN3A4MXlveXVtaGI3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ftfVpeWsm95QgGfOZ8/giphy.gif') no-repeat center center; 
     background-size: cover;
     display: grid;
-    grid-template-columns: 25% auto;
+    grid-template-columns: 35% auto;
     grid-template-rows: auto 40%;
     grid-template-areas: 
     "aside article" 
@@ -112,6 +124,39 @@ body{
 .aside{
     grid-area: aside;
 }
+.aside>ul{
+    padding: var(--padding);
+}
+.aside>ul>li{
+    margin-bottom: var(--padding);
+}
+
+.aside>ul>li>a{
+    color: var(--text-color);
+    letter-spacing: 2px;
+    font-size: var(--font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding : var(--padding);
+}
+.aside>ul>li>a:hover{
+
+    color: var(--decore-text-color);
+    background: var(--bg-color);
+}
+.aside>ul>li img{
+    width : var(--icon-size);
+    height: var(--icon-size);
+    margin-left : var(--padding);
+}
+
+
+
 /* article */
 .article{
     grid-area: article;
